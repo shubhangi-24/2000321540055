@@ -7,8 +7,7 @@ const PORT = 8008;
 app.use(express.json());
 
 function isURLValid(url) {
-  // Implement your own URL validation logic here
-  // For simplicity, we will just check if the URL contains "http://" or "https://"
+  
   return url.startsWith('http://') || url.startsWith('https://');
 }
 
